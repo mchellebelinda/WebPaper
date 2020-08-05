@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper | Payment Details</title>
+    <link rel="stylesheet" href="paymentDetail.css">
+    <link rel="stylesheet" href="homee.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <style>
+            .his a{
+                color: white;
+                text-decoration: none;
+            }
+            .his a:hover{
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+</head>
+<body>
+     <!--Nav-Bar-->
+     <div class="top-nav-bar">
+            <div class="search-box">
+                <!-- <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i> -->
+                <a href="loginweb.html"><img src="image/logo.png" class="logo"></a>
+                <input type="text" class="form-control">
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+        <div class="menu-bar">
+            <ul>
+                <li style="font-weight: bold;"><a href="cart.html"><i class="fa fa-shopping-basket"> (2)</i></a></li>
+                <li style="color: white; font-weight: bold;">Hello, Britney!</li>
+                <li class="signout"><a href="login.html" style="color: black;">Sign Out</a></li>
+            </ul>
+        </div>
+        
+        
+        <!--Content-->
+        <!-- <section class="header"> -->
+            
+            <!--Side Menu-->
+            <div class="side-menu" id="side-menu" style="background-color: #c13f23">
+                <ul>
+                    <li>Popular</li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn" style="text-decoration: none;"><a href="allBooks.html">All Books</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn">Rented Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="float: left; margin-top: -30px; margin-left: 800px;"><div class="dropdown">
+                        <button class="dropbtn">Sold Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li class="his" style="float: left; margin-top: -25px; margin-left: 200px;"><a href="history.html">History</a></li>
+                </ul>
+            </div>
+        <!-- </section> -->
+        </div>
+
+    <!-- Payment Detail -->
+    <div class="wrap cf" style="font-family: 'Archivo Narrow', sans-serif; margin-top: -70px;">
+        <h1 class="projTitle" style="padding: 5px;">Payment Details<span></span> </h1>
+        <div class="heading cf">
+          <h5>Name: Britney</h4>
+          <h5>Address: Jl. Sudirman No.10 Jakarta Pusat </h6>
+          <h5>Mobile: 081214054124</h6>
+      <!--     <a href="#" class="continue">Continue Shopping</a> -->
+        </div>
+        <div class="cart">
+      <!--    <ul class="tableHead">
+            <li class="prodHeader">Product</li>
+            <li>Quantity</li>
+            <li>Total</li>
+             <li>Remove</li>
+          </ul>-->
+          <ul class="cartWrap">
+            <li class="items odd">
+              
+          <div class="infoWrap"> 
+              <div class="cartSection">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/419qPWVT%2B5L._SX382_BO1,204,203,200_.jpg" alt="" class="itemImg" />
+                <p class="itemNumber">RENT</p>
+                <h3>C How to Program, Global Edition</h3>
+              
+                 <p> <input type="text"  class="qty" placeholder="1"/> x Rp 20.000</p>
+              
+                <p class="stockStatus"> In Stock</p>
+              </div>  
+          
+              
+              <div class="prodTotal cartSection">
+                <p>Rp 20.000</p>
+              </div>
+                    <div class="cartSection removeWrap">
+                 <a href="#" class="remove">x</a>
+              </div>
+            </div>
+            </li>
+            <li class="items even">
+              
+             <div class="infoWrap"> 
+              <div class="cartSection">
+               
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41R7gJgF3mL._SX377_BO1,204,203,200_.jpg" alt="" class="itemImg" />
+                <p class="itemNumber">BUY</p>
+                <h3>Design and Analysis of Algorithms S. Sridhar</h3>
+              
+                 <p> <input type="text"  class="qty" placeholder="1"/> x Rp 96.000</p>
+              
+                <p class="stockStatus"> In Stock</p>
+              </div>  
+          
+              
+              <div class="prodTotal cartSection">
+                <p>Rp 96.000</p>
+              </div>
+                    <div class="cartSection removeWrap">
+                 <a href="#" class="remove">x</a>
+              </div>
+            </div>
+            </li>
+    
+            
+            
+            <!--<li class="items even">Item 2</li>-->
+       
+          </ul>
+        </div>
+        
+        <div class="promoCode"><label for="promo">Choose Payment Method 
+        </label><input type="checkbox" name=""/> <img src="https://1.bp.blogspot.com/-zqvCZXYnnfA/XciTU6Ikw_I/AAAAAAAABJc/TrUNMleviBsRtXgnDWzFEhZjxN03ET7_gCLcBGAsYHQ/s1600/Logo%2BOVO.png" class="ovo">  <label for="promo">
+        </label><input type="checkbox" name=""/> <img src="https://seeklogo.com/images/G/gopay-logo-D27C1EBD0D-seeklogo.com.png"  width="42px" height="17px">
+        <label for="promo"></label><input type="checkbox" name=""/> <img src="https://sadewapulsa.com/wp-content/uploads/2019/08/dana-logo-png.png" width="42px" height="20px"> 
+        <label for="promo"></label><input type="checkbox" name=""/> <img src="https://logos-download.com/wp-content/uploads/2017/03/BCA_logo_Bank_Central_Asia.png" width="42px" height="20px" > 
+        <label for="promo"></label><input type="checkbox" name=""/> <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/1200px-BNI_logo.svg.png" class="bni"> 
+        <label for="promo"></label><input type="checkbox" name=""/> <img src="https://logos-download.com/wp-content/uploads/2016/06/Mandiri_logo.png" width="40px" height="20px">
+        </div>
+        <div class="promoCode" style="margin-left: 10px;"><label for="promo">Choose Delivery Method
+        </label><input type="checkbox" name=""/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/New_Logo_JNE.png" width="40px" height="20px"> Rp 10.000 (1-2 days) <label for="promo">
+        </label><input type="checkbox" name=""/> <img src="https://cdn.clipart.email/bcd368ef0060f0421889acd1f43927ca_gojek-terbaru-free-vector-logo-cdr-ai-eps-png-dodo-grafis_1600-1200.png" width="40px" height="40px"> Rp 25.000 (3-6 hours)
+        </div>
+        
+        <div class="subtotal cf">
+          <ul>
+            <li class="totalRow"><span class="label">Subtotal</span><span class="value">Rp 116.000</span></li>
+            
+                <li class="totalRow"><span class="label">Shipping</span><span class="value">Rp 10.000</span></li>
+            
+      
+                  <li class="totalRow final"><span class="label">Total</span><span class="value">Rp 126.000</span></li>
+            <li class="totalRow"><a href="#" class="btn continue">Finish</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+<!-- Footer -->
+ <footer>
+          <div class="footer" style="height: 250px; margin-top: 0;">
+          <div class="first-footer">
+            <h1 style="margin-bottom: 10px; padding: 0;">Payment Methods</h1>
+            <ul class="first-list" style="margin-bottom: 0;">
+              <li style="margin-bottom: 0;"><img src="image/bca.png" class="bca"></li>
+              <li style="margin-bottom: 0;"><img src="image/man.png" class="man"></li>
+              <li style="margin-bottom: 0;"><img src="image/bni.png" class="bni"></li>
+            </ul>
+                <div class="scnd" style="margin-bottom: 0; margin-top: 0;">
+                    <ul class="scnd-list">
+                        <li><img src="image/dana.png" class="dana"></li>
+                        <li><img src="image/ovo.png" class="ovo"></li>
+                        <li><img src="image/gopay.png" class="gopay"></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h1>Help</h1>
+                    <ul class="helpp">
+                        <li><a href="#" style="color: black">Customer Service</a></li>
+                        <li><a href="#" style="color: black">Terms and Conditions</a></li>
+                        <li><a href="#" style="color: black">Privacy Policy</a></li>
+                    </ul>
+                </div>
+          </div>
+
+          <div class="second-footer">
+            <h1>Follow Us On</h1>
+                <div class="socmed">
+                <a href="https://www.instagram.com/officialpaper.id/"><img src="image/instagram.png" class="ig"></a>
+                    <a href="https://fb.me/officialpaper.id"><img src="image/facebook.png" class="ig"></a>
+                    <a href="https://www.twitter.com/Officialpaperz"><img src="image/twitter.png" class="ig"></a>
+                </div>
+          </div>
+          <div class="third-footer">
+            <h1>Download Our App</h1>
+            <div class="download"></div>
+              <a href="#"><img src="image/app.png" class="app"></a>
+              <a href="#"><img src="image/goo.png" class="goo"></a>
+            </div>
+          </div>
+          </div>
+        </footer>
+</body>
+</html>

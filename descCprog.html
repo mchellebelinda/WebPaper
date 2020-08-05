@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+
+    <!-- Attach homee.css -->
+    <link rel="stylesheet" href="homee.css">
+    <link rel="stylesheet" href="descBuku.css">
+
+    <title>Paper | C++ Programming: From Problem Analysis to Program Design by D.S. Malik</title>
+
+    <style>
+      .his a{
+        color: white;
+        text-decoration: none;
+      }
+      .his a:hover{
+        color: black;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    
+    <!-- Start NavBar -->
+    <div class="top-nav-bar">
+            <div class="search-box">
+                <!-- <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i> -->
+                <a href="loginweb.html"><img src="image/logo.png" class="logo"></a>
+                <input type="text" class="form-control">
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+        <div class="menu-bar">
+            <ul>
+                <li style="font-weight: bold;"><a href="cart.html"><i class="fa fa-shopping-basket"> (2)</i></a></li>
+                <li style="color: white; font-weight: bold;">Hello, Britney!</li>
+                <li class="signout"><a href="login.html" style="color: black;">Sign Out</a></li>
+            </ul>
+        </div>
+        
+        
+        <!--Content-->
+        <!-- <section class="header"> -->
+            
+            <!--Side Menu-->
+            <div class="side-menu" id="side-menu" style="background-color: #c13f23">
+                <ul>
+                    <li>Popular</li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn" style="text-decoration: none;"><a href="allBooks.html">All Books</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn">Rented Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="float: left; margin-top: -30px; margin-left: 800px;"><div class="dropdown">
+                        <button class="dropbtn">Sold Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li class="his" style="float: left; margin-top: -25px; margin-left: 200px;"><a href="history.html">History</a></li>
+                </ul>
+            </div>
+        <!-- </section> -->
+        </div>
+    <!-- End SideMenu -->
+
+
+    <!-- Start Jumbotron -->
+    <div class="content">
+      <h1 style="text-align: left; font-family: 'Archivo Narrow', sans-serif;; font-size: 16px;"><a href = "#" style="color: black;">Rented Books</a> -> <a href = "#" style="color: black;">University</a> -> <a href = "#" style="color: black;">C++ Programming: From Problem Analysis to Program Design</a></h1>
+      <div class="jumbotron pt-4 pb-4 text-center col-md-12">
+        <div class="stock">
+          <p>Stock : 1/1</p>
+        </div>
+        <img src="image/cprog.jpg" class="img-fluid" alt="Responsive image" style="height: 295px;">
+        <h1 class="title mt-2">C++ Programming: Problem Analysis to Program Design</h1>
+        <p class="mb-1">by D.S. Malik | Technology & Programming | 1731 pages</p>
+        <p style="font-size: 18px; font-style: italic; text-align: center;">Rented Book</p>
+
+        <!-- Start ratingStar -->
+        <div class="ratingStar">
+          <input type="radio" name="star" id="star1"><label for="star1"></label>
+          <input type="radio" name="star" id="star2"><label for="star2"></label>
+          <input type="radio" name="star" id="star3"><label for="star3"></label>
+          <input type="radio" name="star" id="star4"><label for="star4"></label>
+          <input type="radio" name="star" id="star5"><label for="star5"></label>
+        </div> <!-- close ratingStar -->
+
+        <div class="row">
+          <!-- <div class="col-md-6">
+            <a class="btn btn-primary btn-block mt-n3" href="cart.html" role="button">Buy</a>
+          </div> -->
+          <div class="col-md-6" style="margin-left: 230px;">
+            <a class="btn btn-primary btn-block mt-n3" href="cart.html" role="button">Add to Cart</a>
+          </div>
+        </div>
+      </div> <!-- close Jumbotron -->
+    </div> <!-- close Content -->
+    <!-- End Jumbotron -->
+
+
+    <!-- Start Summary -->
+    <div class="content">
+      <div class="summary text-center pt-1">
+        <h2 class="title2">Summary</h2>
+        <hr class="pb-3">
+          <p class="text-justify px-4">C++ PROGRAMMING: FROM PROBLEM ANALYSIS TO PROGRAM DESIGN, Sixth Edition remains the definitive text for a first programming language course. D.S. Malik's time-tested, student-centered methodology uses a strong focus on problem-solving and full-code examples to vividly demonstrate the how and why of applying programming concepts and utilizing C++ to work through a problem.<br><br>This new edition includes updated end-of-chapter exercises, new debugging exercises, an earlier introduction to variables and a streamlined discussion of user-discussion of user-defined functions to best meet the needs of the modern CS1 course. An optional CourseMate brings C++ PROGRAMMING: FROM PROBLEM ANALYSIS TO PROGRAM DESIGN to life with interactive study tools including videos, quizzing, flashcards, and games. The CourseMate's digital Lab Manual offers additional hands-on exercises, allowing students to reinforce critical thinking through practice.</p>   
+      </div>
+    </div>
+    <!-- End Summary -->
+
+
+    <!-- Start Information -->
+    <div class="content">
+      <div class="summary text-center mt-5 pt-2">
+        <h2 class="title2">Information</h2>
+        <hr class="pb-3">
+        <div class="row"> <!-- row Author -->
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">Author</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">D.S. Malik</p>
+          </div>
+        </div>
+
+        <div class="row"> <!-- row Publisher -->
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">Publisher</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">Course Technology; 6th edition (May 25, 2012)</p>
+          </div>
+        </div>
+
+        <div class="row"> <!-- row Category -->
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">Category</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">Technology, Programming</p>
+          </div>
+        </div>
+
+        <div class="row"> <!-- row Pages -->
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">Pages</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">1731</p>
+          </div>
+        </div>
+
+        <div class="row"> <!-- row File Size -->
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">File Size</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">-</p>
+          </div>
+        </div>
+
+        <div class="row"> <!-- row Price of Borrowing -->
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">Price of Borrowing</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">Rp 20.000/7 days</p>
+          </div>
+        </div>
+
+        <!-- <div class="row">row Price of Buying
+          <div class="col-sm-5 offset-sm-1">
+            <p class="text-left px-4">Price of Buying</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-left px-4">Rp 105.000</p>
+          </div>
+        </div>
+ -->      </div> 
+    </div> <!-- close Content -->
+    <!-- End Information -->
+
+
+    <!-- Start Review -->
+    <div class="content" style="margin-bottom: 100px;">
+      <div class="summary text-center mt-5 pt-2">
+        <h2 class="title2">Review</h2>
+        <hr class="pb-3">
+
+        <div class="reviewBox">
+          <div class="textbox">
+            <input type="text" placeholder="Name:" name="">
+          </div>
+          <br>
+
+          <textarea class="review" placeholder="What do you think of this book?"></textarea>
+          <br>
+
+          <button class="submit" type="submit" value="Submit">Submit</button>
+        </div>
+      </div>
+    </div> <!-- close Content -->
+    <!-- End Review -->
+
+    <footer>
+          <div class="footer" style="height: 250px; margin-top: 100px;">
+          <div class="first-footer">
+            <h1 style="margin-bottom: 10px; padding: 0;">Payment Methods</h1>
+            <ul class="first-list" style="margin-bottom: 0;">
+              <li style="margin-bottom: 0;"><img src="image/bca.png" class="bca"></li>
+              <li style="margin-bottom: 0;"><img src="image/man.png" class="man"></li>
+              <li style="margin-bottom: 0;"><img src="image/bni.png" class="bni"></li>
+            </ul>
+                <div class="scnd" style="margin-bottom: 0; margin-top: 0;">
+                    <ul class="scnd-list">
+                        <li><img src="image/dana.png" class="dana"></li>
+                        <li><img src="image/ovo.png" class="ovo"></li>
+                        <li><img src="image/gopay.png" class="gopay"></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h1>Help</h1>
+                    <ul class="helpp">
+                        <li><a href="#" style="color: black">Customer Service</a></li>
+                        <li><a href="#" style="color: black">Terms and Conditions</a></li>
+                        <li><a href="#" style="color: black">Privacy</a></li>
+                    </ul>
+                </div>
+          </div>
+
+          <div class="second-footer">
+            <h1>Follow Us On</h1>
+                <div class="socmed">
+                <a href="https://www.instagram.com/officialpaper.id/"><img src="image/instagram.png" class="ig"></a>
+                    <a href="https://fb.me/officialpaper.id"><img src="image/facebook.png" class="ig"></a>
+                    <a href="https://www.twitter.com/Officialpaperz"><img src="image/twitter.png" class="ig"></a>
+                </div>
+          </div>
+          <div class="third-footer">
+            <h1>Download Our App</h1>
+            <div class="download"></div>
+              <a href="#"><img src="image/app.png" class="app"></a>
+              <a href="#"><img src="image/goo.png" class="goo"></a>
+            </div>
+          </div>
+          </div>
+        </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

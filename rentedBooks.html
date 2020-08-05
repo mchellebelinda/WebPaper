@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Attach homee.css -->
+    <link rel="stylesheet" href="homee.css">
+
+    <title>Paper | Rented Books</title>
+
+    <style>
+        .his a{
+                color: white;
+                text-decoration: none;
+            }
+        .his a:hover{
+          color: black;
+          text-decoration: none;
+        }
+
+        .content {
+          width: 900px;
+          margin-left: 12.5rem;
+          font-family: 'Archivo Narrow', sans-serif;
+        }
+
+        .all{
+          border-bottom: 1px solid lightgray;
+          color: black;
+          font-size: 36px;
+        }
+
+        .alert alert-danger text-center{
+          /*border-radius: 5px;*/
+          font-size: 18px;
+        }
+
+        .col-sm{
+          text-align: center;
+        }
+
+        .card-title, .card-text {
+          color: #000;
+          text-align: center;
+        }
+
+        .view{
+          background-color: #c13f23;
+          border-radius: 10px;
+          width: 150px;
+          color: #fff;
+          font-weight: 300;
+          box-shadow: none;
+          margin: 0;
+        }
+
+        .view:hover a{
+          color: black;
+        }
+
+        .view a{
+          text-decoration: none; 
+          color: white;
+        }
+
+        .status{
+          font-size: 16px;
+          font-style: italic;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          color: black;
+        }
+
+        .card-body pt-2{
+          background-color: #f1f3f4;
+          border-color: #f1f3f4;
+        }
+
+        .card img {
+          position: relative;
+          transition: 0.2s;
+        }
+
+        .card img:hover {
+          transform: scale(1.1);
+          box-shadow: 5px 5px 5px black;
+          z-index: 1;
+        }
+
+        .numbutton{
+          margin-bottom: 0;
+          margin-top: 30px;
+          margin-left: 46.5%;
+        }
+
+        .number{
+          background-color: white;
+          color: black;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          margin-bottom: 0;
+        }
+
+        .number:hover{
+          background-color: #c13f23;
+          color: white;
+        }
+
+        section {
+          /*min-height: 2000px;*/
+        }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <!-- Start NavBar -->
+    <div class="top-nav-bar">
+            <div class="search-box">
+                <!-- <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i> -->
+                <a href="loginweb.html"><img src="image/logo.png" class="logo"></a>
+                <input type="text" class="form-control">
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+        <div class="menu-bar">
+            <ul>
+                <li style="font-weight: bold;"><a href="cart.html"><i class="fa fa-shopping-basket"> (2)</i></a></li>
+                <li style="color: white; font-weight: bold;">Hello, Britney!</li>
+                <li class="signout"><a href="login.html" style="color: black;">Sign Out</a></li>
+            </ul>
+        </div>
+        
+        
+        <!--Content-->
+        <!-- <section class="header"> -->
+            
+            <!--Side Menu-->
+            <div class="side-menu" id="side-menu" style="background-color: #c13f23">
+                <ul>
+                    <li>Popular</li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn" style="text-decoration: none;"><a href="allBooks.html">All Books</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn"><a href="rentedBooks.html">Rented Books</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="float: left; margin-top: -30px; margin-left: 800px;"><div class="dropdown">
+                        <button class="dropbtn">Sold Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li class="his" style="float: left; margin-top: -25px; margin-left: 200px;"><a href="history.html">History</a></li>
+                </ul>
+            </div>
+        <!-- </section> -->
+        </div>
+    <!-- End SideMenu -->
+
+
+    <!-- Start AllBooks -->
+    <section>
+      <div class="content">
+        
+        <!-- Row 1: Judul -->
+        <div class="row">       
+          <div class="col">
+            <div class="alert alert-danger text-center" role="alert" style="height: 50px; padding: 0; background-color: #f1f3f4; border-color: #f1f3f4;">
+              <h1 class="all">Rented Books</h1>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 0; margin-bottom: 10px;">
+          <label for="category">Category:</label>
+
+          <select id="category">
+          <option value="none">None</option>
+          <option value="Primary">Primary</option>
+          <option value="Secondary">Secondary</option>
+          <option value="High School">High School</option>
+          <option value="High School">University</option>
+</select>
+        </div>
+
+
+        <!-- Row 2: Pajangan -->
+        <div class="row mb-4">
+          <div class="col-sm"> <!-- Coloumn 1 -->
+            <!-- <a href="descNovel1.html" class="text-decoration-none"> -->
+              <div class="card">
+                <img src="image/foundation.jpg" class="card-img-top" alt="Foundations in Personal Finance, College Edition" title="Foundations in Personal Finance, College Edition" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Foundations in Personal Finance, College Edition</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Dave Ramsey</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view"><a href="foundation.html">View Details</a></button>
+                </div>
+              </div>
+            <!-- </a> -->
+          </div>
+
+          <div class="col-sm"> <!-- Coloumn 2 -->
+            <a href="descCprog.html" class="text-decoration-none">
+              <div class="card">
+                <img src="image/cprog.jpg" class="card-img-top" alt="C++ Programming: From Problem Analysis to Program Design by D.S. Malik" title="C++ Programming: From Problem Analysis to Program Design by D.S. Malik" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">C++ Programming: Problem Analysis & Program Design</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by D.S. Malik</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view"><a href="descCprog.html">View Details</a></button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm"> <!-- Coloumn 3 -->
+            <a href="descBuku1.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/419qPWVT%2B5L._SX382_BO1,204,203,200_.jpg" class="card-img-top" alt="Buku1 by Author1" title="Buku1 by Author1" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title" style="margin-bottom: 0; font-weight: bold; font-size: 20px;">C How to<br>Program, Global<br>Edition</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Paul D., Harvey D.</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm"> <!-- Coloumn 4 -->
+            <a href="descBuku1.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51MPIHrgl%2BL._SX332_BO1,204,203,200_.jpg" class="card-img-top" alt="Buku1 by Author1" title="Buku1 by Author1" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Viruses, Plagues, and History: Past, Present and Future</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Michael B. A. O.</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- Row 3: Pajangan -->
+        <div class="row mb-4">
+          <div class="col-sm"> <!-- Coloumn 1 -->
+            <a href="descNovel2.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51fgDX37U7L._SX442_BO1,204,203,200_.jpg" class="card-img-top" alt="The Phantom Tollbooth by Norton Juster" title="The Phantom Tollbooth by Norton Juster" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Introduction to Algorithms (The MIT Press)</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Thomas H. Cormen</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm"> <!-- Coloumn 2 -->
+            <a href="descBuku2.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51RkwbAV8KL._SX398_BO1,204,203,200_.jpg" class="card-img-top" alt="Buku2 by Author2" title="Buku2 by Author2" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Managerial Economics & Business Strategy</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Michael R. B.</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm"> <!-- Coloumn 3 -->
+            <a href="descBuku3.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://m.media-amazon.com/images/I/51hQY241BVL.jpg" class="card-img-top" alt="Buku3 by Author3" title="Buku3 by Author3" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Operation Management 12th Edition</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Jay H., Barry R.</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div> <!-- end div col 3 -->
+
+          <div class="col-sm"> <!-- Coloumn 4 -->
+            <a href="descBuku1.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41FYxEVPUNL._SX412_BO1,204,203,200_.jpg" class="card-img-top" alt="Buku1 by Author1" title="Buku1 by Author1" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Introduction to Managerial Accounting</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Brewer Garisson N.</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- end div Row3: Pajangan -->
+
+
+        <!-- Row 4: Pajangan -->
+        <div class="row mb-4">
+          <div class="col-sm"> <!-- Coloumn 1 -->
+            <a href="descBuku5.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41R7gJgF3mL._SX377_BO1,204,203,200_.jpg" class="card-img-top" alt="Tata Bahasa Indonesia by Gorys Keraf" title="Tata Bahasa Indonesia by Gorys Keraf" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Design and<br>Analysis of<br>Algorithms</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by S. Sridhar</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm"> <!-- Coloumn 2 -->
+            <a href="descBuku6.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41H12EYidzL._SX384_BO1,204,203,200_.jpg" class="card-img-top" alt="Kamus Peribahasa by Sarwono Pusposaputro" title="Kamus Peribahasa by Sarwono Pusposaputro" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Strategies & Tactics for the MBE 7th Edition</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Steven L. Emanuel</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm"> <!-- Column 3 -->
+            <a href="descBuku7.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61fE9l0gPIL._SR500,500_.jpg" class="card-img-top" alt="Matematika Diskrit by Rinaldi Munir" title="Matematika Diskrit by Rinaldi Munir" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Python Programming: An Introduction to Computer Science</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by John Zelle</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>   <!-- end div col 4  -->
+
+          <div class="col-sm"> <!-- Coloumn 3 -->
+            <a href="descBuku7.html" class="text-decoration-none">
+              <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51ff6qOMRaL._SX332_BO1,204,203,200_.jpg" class="card-img-top" alt="Matematika Diskrit by Rinaldi Munir" title="Matematika Diskrit by Rinaldi Munir" style="height: 290px;">
+                <div class="card-body pt-2">
+                  <h4 class="card-title my-0" style="margin-bottom: 0; font-size: 20px; font-weight: bold;">Herbal Antibiotics: Natural Alternatives Second Edition</h4>
+                  <p class="card-text" style="margin-bottom: 0; margin-top: 0;">by Stephen Harrod B.</p>
+                  <p class="status">Rented Book</p>
+                  <button class="view">View Details</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- end div Row4: Pajangan -->
+
+        <!-- <div class="numbutton">
+          <button class="number">1</button>
+          <button class="number">2</button>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- End AllBooks -->
+
+
+
+    <!-- Footer -->
+    <footer>
+          <div class="footer" style="height: 250px; margin-top: 100px;">
+          <div class="first-footer">
+            <h1 style="margin-bottom: 10px; padding: 0;">Payment Methods</h1>
+            <ul class="first-list" style="margin-bottom: 0;">
+              <li style="margin-bottom: 0;"><img src="image/bca.png" class="bca"></li>
+              <li style="margin-bottom: 0;"><img src="image/man.png" class="man"></li>
+              <li style="margin-bottom: 0;"><img src="image/bni.png" class="bni"></li>
+            </ul>
+                <div class="scnd" style="margin-bottom: 0; margin-top: 0;">
+                    <ul class="scnd-list">
+                        <li><img src="image/dana.png" class="dana"></li>
+                        <li><img src="image/ovo.png" class="ovo"></li>
+                        <li><img src="image/gopay.png" class="gopay"></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h1>Help</h1>
+                    <ul class="helpp">
+                        <li><a href="#" style="color: black">Customer Service</a></li>
+                        <li><a href="#" style="color: black">Terms and Conditions</a></li>
+                        <li><a href="#" style="color: black">Privacy</a></li>
+                    </ul>
+                </div>
+          </div>
+
+          <div class="second-footer">
+            <h1>Follow Us On</h1>
+                <div class="socmed">
+                <a href="https://www.instagram.com/officialpaper.id/"><img src="image/instagram.png" class="ig"></a>
+                    <a href="https://fb.me/officialpaper.id"><img src="image/facebook.png" class="ig"></a>
+                    <a href="https://www.twitter.com/Officialpaperz"><img src="image/twitter.png" class="ig"></a>
+                </div>
+          </div>
+          <div class="third-footer">
+            <h1>Download Our App</h1>
+            <div class="download"></div>
+              <a href="#"><img src="image/app.png" class="app"></a>
+              <a href="#"><img src="image/goo.png" class="goo"></a>
+            </div>
+          </div>
+          </div>
+        </footer>
+    <!-- End Footer -->
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

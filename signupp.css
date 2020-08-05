@@ -1,0 +1,118 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    background: #fef0de;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.signupbox
+{
+    width: 340px;
+    height: 550px;
+    background: #c13f23;
+    background-position: center;
+    color: #fff;
+    top: 54%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.av
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 45px);
+}
+
+h1
+{
+    margin: 0;
+    padding: 0;
+}
+.signup
+{
+    margin-top: -20px;
+    margin-bottom: 5px;
+    height: 35px;
+    margin-left: 25%;
+}
+.signupbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.signupbox p1
+{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+.signupbox input
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signupbox input[type="text"], input[type="password"], input[type="tel"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+.signupbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.signupbox input[type="checkbox"]
+{
+    border: none;
+    height: auto;
+    margin-left: -130px;
+    margin-right: 0;
+    padding-right: 0;
+}
+.check{
+    margin-left: -130px;
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: -15px;
+    font-size: 12px;
+}
+.signupbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff; 
+}
+.signupbox a
+{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.signupbox a:hover
+{
+    color: #ffc107;
+}

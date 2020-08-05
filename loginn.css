@@ -1,0 +1,126 @@
+body
+{
+    margin: 0;
+    padding: 0;
+/*    background: url(book.jpg);*/
+    background: #fef0de;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox
+{
+    width: 320px;
+    height: 440px;
+    background: #c13f23;
+    background-position: center;
+    color: #fff;
+    top: 52%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.av
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1
+{
+    margin: 0;
+    padding: 0 0 20px;
+/*    text-align: center;*/
+/*    font-size: 22px;*/
+}
+.login
+{
+    height: 60px;
+    margin-left: 5%;
+}
+.loginbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox p1
+{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+.loginbox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff; 
+}
+.loginbox a
+{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.loginbox a:hover
+{
+    color: #ffc107;
+    
+}
+
+.loginn{
+    background: #fff;
+    width: 150px;
+    height: 30px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 1px;
+    margin-left: 55px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+.loginn:hover{
+    background-color: #ffe7c7;
+    color: black;
+    font-weight: bold;
+}
+.loginn a{
+    padding-right: 30px;
+    padding-left: 30px;
+}

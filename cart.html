@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper | Your Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="homee.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .his a{
+            color: white;
+            text-decoration: none;
+        }
+        .his a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--Nav-Bar-->
+   <div class="top-nav-bar">
+            <div class="search-box">
+                <!-- <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i> -->
+                <a href="loginweb.html"><img src="image/logo.png" class="logo"></a>
+                <input type="text" class="form-control">
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+        <div class="menu-bar">
+            <ul>
+                <li style="font-weight: bold;"><a href="cart.html"><i class="fa fa-shopping-basket"> (1)</i></a></li>
+                <li style="color: white; font-weight: bold;">Hello, Britney!</li>
+                <li class="signout"><a href="login.html" style="color: black;">Sign Out</a></li>
+            </ul>
+        </div>
+        
+        
+        <!--Content-->
+        <!-- <section class="header"> -->
+            
+            <!--Side Menu-->
+            <div class="side-menu" id="side-menu" style="background-color: #c13f23">
+                <ul>
+                    <li>Popular</li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn"><a href="allBooks.html">All Books</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="margin-left: 180px;"><div class="dropdown">
+                        <button class="dropbtn">Rented Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li style="float: left; margin-top: -30px; margin-left: 800px;"><div class="dropdown">
+                        <button class="dropbtn">Sold Books</button>
+                        <div class="dropdown-content">
+                            <a href="#">Primary</a>
+                            <a href="#">Secondary</a>
+                            <a href="#">High School</a>
+                            <a href="#">University</a>
+                        </div>
+                    </div></li>
+                    <li class="his" style="float: left; margin-top: -25px; margin-left: 200px;"><a href="history.html">History</a></li>
+                </ul>
+            </div>
+        <!-- </section> -->
+        </div>
+ 
+    <table id="cart" class="table table-hover table-condensed" style="font-family: 'Archivo Narrow', sans-serif;">
+        <thead>
+            <h1 class="text-center" style="font-size: 28px;">Your Cart</h1>
+        <tr>
+            <th style="width:50%">Product</th>
+            <th style="width:10%">Price</th>
+            <th style="width:8%">Quantity</th>
+            <th style="width:22%" class="text-center">Subtotal</th>
+            <th style="width:10%"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-th="Product">
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs"><img src="https://images-na.ssl-images-amazon.com/images/I/419qPWVT%2B5L._SX382_BO1,204,203,200_.jpg" width="148px" height="203.25px" alt="..." class="img-responsive"/></div>
+                    <div class="col-sm-9">
+                        <h4 class="nomargin">C How to Program, Global Edition</h4>
+                        <p style="font-style: italic;">Rented Book</p>
+                        <p>For courses in computer programming C How to Program is a comprehensive introduction to programming in C. </p>
+                    </div>
+                </div>
+            </td>
+            <td data-th="Price">Rp 20.000/7 days</td>
+            <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+            </td>
+            <td data-th="Subtotal" class="text-center">Rp 40.000</td>
+            <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+            </td>
+        </tr>
+
+        <!-- <tr>
+            <td data-th="Product">
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs"><img src="https://images-na.ssl-images-amazon.com/images/I/41R7gJgF3mL._SX377_BO1,204,203,200_.jpg"width="148px" height="203.25px" alt="..." class="img-responsive"/></div>
+                    <div class="col-sm-9">
+                        <h4 class="nomargin">Design and Analysis of Algorithms S. Sridhar</h4>
+                        <p style="font-style: italic;">Sold Book</p>
+                        <p>Design and Analysis of Algorithms is designed to serve as a textbook for undergraduate student of computer sciene and information technology.</p>
+                    </div>
+                </div>
+            </td>
+
+            <td data-th="Price">Rp 96.000</td>
+            <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+            </td>
+            <td data-th="Subtotal" class="text-center">Rp 96.000</td>
+            <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+            </td>
+        </tr> -->
+
+        <!-- <tr>
+            <td data-th="Product">
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs"><img src="https://images-na.ssl-images-amazon.com/images/I/51iEk4zq6yL._SX376_BO1,204,203,200_.jpg" width="148px" height="203.25px" alt="..." class="img-responsive"/></div>
+                    <div class="col-sm-9">
+                        <h4 class="nomargin">Foundations in Personal Finance, College Edition</h4>
+                        <p>Foundations in Personal Finance College edition is a text book that accompanies a workbook. The curriculum empowers students to make sound financial decisions for life. Also a good tool just to have at home.</p>
+                    </div>
+                </div>
+            </td>
+            <td data-th="Price">Rp.415.000</td>
+            <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+            </td>
+            <td data-th="Subtotal" class="text-center">Rp.415.000</td>
+            <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+            </td>
+        </tr> -->
+
+
+
+
+        </tbody>
+        <tfoot>
+        <!-- <tr class="visible-xs">
+            <td class="text-center"><strong>Total 1.99</strong></td>
+        </tr> -->
+        <tr>
+            <td><a href="loginweb.html" class="btn btn-warning"><i class="fa fa-angle"></i> Continue Shopping</a></td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center"><strong>Total: Rp 40.000</strong></td>
+            <td><a href="payment.html" class="btn btn-warning"><i class="fa fa-angle"></i>Checkout</a></td>
+        </tr>
+        </tfoot>
+    </table>
+     <!-- Footer -->
+     <footer>
+          <div class="footer" style="height: 250px; margin-top: 100px;">
+          <div class="first-footer">
+            <h1 style="margin-bottom: 10px; padding: 0;">Payment Methods</h1>
+            <ul class="first-list" style="margin-bottom: 0;">
+              <li style="margin-bottom: 0;"><img src="image/bca.png" class="bca"></li>
+              <li style="margin-bottom: 0;"><img src="image/man.png" class="man"></li>
+              <li style="margin-bottom: 0;"><img src="image/bni.png" class="bni"></li>
+            </ul>
+                <div class="scnd" style="margin-bottom: 0; margin-top: 0;">
+                    <ul class="scnd-list">
+                        <li><img src="image/dana.png" class="dana"></li>
+                        <li><img src="image/ovo.png" class="ovo"></li>
+                        <li><img src="image/gopay.png" class="gopay"></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h1>Help</h1>
+                    <ul class="helpp">
+                        <li><a href="#" style="color: black">Customer Service</a></li>
+                        <li><a href="#" style="color: black">Terms and Conditions</a></li>
+                        <li><a href="#" style="color: black">Privacy</a></li>
+                    </ul>
+                </div>
+          </div>
+
+          <div class="second-footer">
+            <h1>Follow Us On</h1>
+                <div class="socmed">
+                <a href="https://www.instagram.com/officialpaper.id/"><img src="image/instagram.png" class="ig"></a>
+                    <a href="https://fb.me/officialpaper.id"><img src="image/facebook.png" class="ig"></a>
+                    <a href="https://www.twitter.com/Officialpaperz"><img src="image/twitter.png" class="ig"></a>
+                </div>
+          </div>
+          <div class="third-footer">
+            <h1>Download Our App</h1>
+            <div class="download"></div>
+              <a href="#"><img src="image/app.png" class="app"></a>
+              <a href="#"><img src="image/goo.png" class="goo"></a>
+            </div>
+          </div>
+          </div>
+        </footer>
+</body>
+<script type="text/javascript" src="../script/cart.js"></script>
+</html>
